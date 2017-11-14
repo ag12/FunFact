@@ -28,18 +28,4 @@ class FactButton: UIButton {
     func setTintColor(_ color: UIColor) -> () {
         setTitleColor(color, for: .normal)
     }
-    
-    static func create(title: String, titleColor: UIColor) -> FactButton {
-        let button = FactButton()
-        button.setTitle(title, for: .normal)
-        button.setTitleColor(titleColor, for: .normal)
-        button.setTitleColor(UIColor.white, for: .highlighted)
-        button.backgroundColor = .white
-        button.titleLabel?.font = button.titleLabel?.font.withSize(18)
-        return button
-    }
-    
-
-    
-    
 }

@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         factLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         
         
-        button = FactButton.create(title: "Click me!", titleColor: view.tintColor)
+        button = FactButtonProvider.create(title: "Click me!", titleColor: view.tintColor)
         button.addTarget(self, action: #selector(click), for: .touchUpInside)
 
         view.addSubview(button)
