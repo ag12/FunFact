@@ -17,6 +17,7 @@
 		1ADA6A391FB5D85600A71527 /* ColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6A381FB5D85600A71527 /* ColorProvider.swift */; };
 		1ADA6A3B1FB5D90800A71527 /* FactLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6A3A1FB5D90800A71527 /* FactLabel.swift */; };
 		1ADA6A421FBB4E8000A71527 /* FactButtonProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6A411FBB4E8000A71527 /* FactButtonProvider.swift */; };
+		1ADA6A441FBB500D00A71527 /* FactLabelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6A431FBB500D00A71527 /* FactLabelProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1ADA6A381FB5D85600A71527 /* ColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProvider.swift; sourceTree = "<group>"; };
 		1ADA6A3A1FB5D90800A71527 /* FactLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactLabel.swift; sourceTree = "<group>"; };
 		1ADA6A411FBB4E8000A71527 /* FactButtonProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactButtonProvider.swift; sourceTree = "<group>"; };
+		1ADA6A431FBB500D00A71527 /* FactLabelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactLabelProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				1ADA6A381FB5D85600A71527 /* ColorProvider.swift */,
 				1ADA6A321FB5CEB800A71527 /* FactProvider.swift */,
 				1ADA6A411FBB4E8000A71527 /* FactButtonProvider.swift */,
+				1ADA6A431FBB500D00A71527 /* FactLabelProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				1ADA6A391FB5D85600A71527 /* ColorProvider.swift in Sources */,
 				1ADA6A3B1FB5D90800A71527 /* FactLabel.swift in Sources */,
+				1ADA6A441FBB500D00A71527 /* FactLabelProvider.swift in Sources */,
 				1ADA6A051FB48B7100A71527 /* ViewController.swift in Sources */,
 				1ADA6A031FB48B7100A71527 /* AppDelegate.swift in Sources */,
 				1ADA6A371FB5D10200A71527 /* FactButton.swift in Sources */,
