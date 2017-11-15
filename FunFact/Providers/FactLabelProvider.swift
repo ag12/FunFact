@@ -10,7 +10,7 @@ import UIKit
 
 struct FactLabelProvider {
     
-    static func provide(_ text: String) -> FactLabel {
+    static func create(_ text: String) -> FactLabel {
         let label = FactLabel()
         label.text = text
         label.textColor = .white

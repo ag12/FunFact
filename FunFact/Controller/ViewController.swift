@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel = FactLabelProvider.provide("Did you know?")
+        titleLabel = FactLabelProvider.create("Did you know?")
         titleLabel.alpha = 0.5
         
         view.addSubview(titleLabel)
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:  20).isActive = true
         titleLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 80).isActive = true
         
-        factLabel = FactLabelProvider.provide(FactProvider().randomFact())
+        factLabel = FactLabelProvider.create(FactProvider().randomFact())
     
         view.addSubview(factLabel)
         
