@@ -21,7 +21,6 @@ class FactButton: UIButton {
     }
     
     func setup() -> () {
-        //setup
         translatesAutoresizingMaskIntoConstraints = false;
     }
     
