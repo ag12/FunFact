@@ -10,7 +10,7 @@ import UIKit
 
 struct FactButtonProvider {
     
-    static func create(title: String, titleColor: UIColor) -> FactButton {
+    static func create(_ title: String, titleColor: UIColor) -> FactButton {
         let button = FactButton()
         button.setTitle(title, for: .normal)
         button.setTitleColor(titleColor, for: .normal)

@@ -26,5 +26,4 @@ struct FactProvider {
     func randomFact() -> String {
         return facts[Utils().randomNumber(self.facts.count)]
     }
-    
 }
