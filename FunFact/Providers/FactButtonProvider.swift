@@ -10,10 +10,9 @@ import UIKit
 
 struct FactButtonProvider {
     
-    static func create(_ title: String, titleColor: UIColor) -> FactButton {
+    static func create(_ title: String) -> FactButton {
         let button = FactButton()
         button.setTitle(title, for: .normal)
-        button.setTitleColor(titleColor, for: .normal)
         button.setTitleColor(UIColor.white, for: .highlighted)
         button.backgroundColor = .white
         button.titleLabel?.font = button.titleLabel?.font.withSize(18)

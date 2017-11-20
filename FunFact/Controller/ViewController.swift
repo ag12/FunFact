@@ -10,14 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var titleLabel: FactLabel!
-    var factLabel: FactLabel!
-    var button: FactButton!
+    var titleLabel: FactLabel = FactLabelProvider.create("Did you know?")
+    var factLabel: FactLabel = FactLabelProvider.create(FactProvider().randomFact())
+    var button: FactButton = FactButtonProvider.create("Click me!")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel = FactLabelProvider.create("Did you know?")
         titleLabel.alpha = 0.5
         
         view.addSubview(titleLabel)
@@ -25,16 +24,13 @@ class ViewController: UIViewController {
         titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:  20).isActive = true
         titleLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 80).isActive = true
         
-        factLabel = FactLabelProvider.create(FactProvider().randomFact())
-    
         view.addSubview(factLabel)
         
         factLabel.topAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
         factLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:  20).isActive = true
         factLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         
-        button = FactButtonProvider.create("Click me!", titleColor: view.tintColor)
+        button.setTintColor(view.tintColor)
         button.addTarget(self, action: #selector(click), for: .touchUpInside)
 
         view.addSubview(button)
